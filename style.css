@@ -6,3 +6,22 @@
   width: 100%;
   height: auto;
 }
+
+/* Stil tombol navigasi carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* Ganti warna sesuai preferensi Anda */
+}
+
+/* Ukuran gambar dalam carousel */
+#facilities-carousel1 .carousel-item img,
+#facilities-carousel2 .carousel-item img {
+  width: 100%; /* Mengisi lebar carousel */
+  height: auto; /* Menyesuaikan tinggi sesuai aspek aslinya */
+}
+
+/* Ukuran card dalam carousel */
+.card {
+  min-width: 300px; /* Atur lebar minimum sesuai kebutuhan Anda */
+  min-height: 400px; /* Atur tinggi minimum sesuai kebutuhan Anda */
+}
