@@ -2,6 +2,32 @@
   position: relative;
 }
 
+/* Efek background blur di carousel utama */
+.carousel-item {
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel-item::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--bg) center/cover no-repeat;
+  filter: blur(25px);
+  transform: scale(1.2);
+  z-index: 1;
+}
+
+.carousel-item img {
+  position: relative;
+  z-index: 2;
+  max-height: 500px; /* atur tinggi gambar */
+  max-width: 1000px; /* atur lebar maksimal */
+  object-fit: contain; /* biar proporsional */
+  margin: 0 auto;
+  display: block;
+}
+
 .carousel-inner img {
   width: 100%;
   height: auto;
