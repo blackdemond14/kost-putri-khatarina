@@ -1,53 +1,80 @@
+/* ===== Container Carousel Utama ===== */
 .carousel-container {
   position: relative;
 }
 
-/* Efek background blur di carousel utama */
-.carousel-item {
+/* ===== Carousel Utama (Hero) ===== */
+.carousel-container .carousel-item {
   position: relative;
   overflow: hidden;
+  min-height: 400px; /* tinggi minimum */
+  max-height: 500px; /* batasi tinggi supaya tidak terlalu besar */
 }
 
-.carousel-item::before {
+.carousel-container .carousel-item::before {
   content: "";
   position: absolute;
   inset: 0;
   background: var(--bg) center/cover no-repeat;
-  filter: blur(25px);
-  transform: scale(1.2);
+  filter: blur(20px);
+  transform: scale(1.1);
   z-index: 1;
 }
 
-.carousel-item img {
+.carousel-container .carousel-item img {
   position: relative;
   z-index: 2;
-  max-height: 500px; /* atur tinggi gambar */
-  max-width: 1000px; /* atur lebar maksimal */
-  object-fit: contain; /* biar proporsional */
+  max-height: 500px; /* batasi tinggi gambar */
+  width: 100%;
+  object-fit: contain; /* gambar proporsional */
   margin: 0 auto;
   display: block;
 }
 
-.carousel-inner img {
-  width: 100%;
-  height: auto;
+/* Panah navigasi selalu bisa diklik */
+.carousel-control-prev,
+.carousel-control-next {
+  z-index: 3 !important;
 }
 
-/* Stil tombol navigasi carousel */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #000; /* Ganti warna sesuai preferensi Anda */
+/* Blur lebih ringan + gambar lebih kecil di HP */
+@media (max-width: 768px) {
+  .carousel-container .carousel-item {
+    max-height: 400px;
+  }
+  .carousel-container .carousel-item img {
+    object-fit: cover;
+    max-height: 400px;
+  }
+  .carousel-container .carousel-item::before {
+    max-height: 100px;
+    filter: blur(15px);
+  }
 }
 
-/* Ukuran gambar dalam carousel */
+/* ===== Carousel Fasilitas ===== */
+#facilities-carousel1 .carousel-item::before,
+#facilities-carousel2 .carousel-item::before {
+  content: none !important; /* hapus efek blur */
+}
+
 #facilities-carousel1 .carousel-item img,
 #facilities-carousel2 .carousel-item img {
-  width: 100%; /* Mengisi lebar carousel */
-  height: auto; /* Menyesuaikan tinggi sesuai aspek aslinya */
+  width: 100%;
+  height: auto;
+  object-fit: cover;
 }
 
-/* Ukuran card dalam carousel */
+/* ===== Navigasi Carousel (semua) ===== */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #000; /* warna panah */
+  border-radius: 50%;
+  padding: 10px;
+}
+
+/* ===== Card di Fasilitas ===== */
 .card {
-  min-width: 300px; /* Atur lebar minimum sesuai kebutuhan Anda */
-  min-height: 400px; /* Atur tinggi minimum sesuai kebutuhan Anda */
+  min-width: 300px;
+  min-height: 400px;
 }
