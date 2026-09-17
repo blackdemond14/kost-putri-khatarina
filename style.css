@@ -1,80 +1,154 @@
-/* ===== Container Carousel Utama ===== */
-.carousel-container {
+/* ===== CSS Variables ===== */
+:root {
+  --primary-color: #374263;
+  --primary-hover: #2a334e;
+  --accent-color: #25d366; /* Warna khas WhatsApp */
+  --text-dark: #2b2b2b;
+  --bg-light: #f8f9fa;
+}
+
+/* ===== General Styles ===== */
+body {
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  color: var(--text-dark);
+  line-height: 1.6;
+  padding-top: 66px; /* Mencegah konten tertutup fixed navbar */
+}
+
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+/* ===== Custom Navbar ===== */
+.custom-navbar {
+  background-color: var(--primary-color);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.custom-navbar .nav-link {
+  font-weight: 500;
+  padding: 0.5rem 1rem !important;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.custom-navbar .nav-link:hover,
+.custom-navbar .nav-link.active {
+  color: #ffffff;
+}
+
+/* ===== Hero Carousel Section ===== */
+#hero-carousel .carousel-item {
+  height: 80vh;
+  min-height: 450px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   position: relative;
 }
 
-/* ===== Carousel Utama (Hero) ===== */
-.carousel-container .carousel-item {
-  position: relative;
-  overflow: hidden;
-  min-height: 400px; /* tinggi minimum */
-  max-height: 500px; /* batasi tinggi supaya tidak terlalu besar */
-}
-
-.carousel-container .carousel-item::before {
-  content: "";
+.carousel-overlay {
   position: absolute;
   inset: 0;
-  background: var(--bg) center/cover no-repeat;
-  filter: blur(20px);
-  transform: scale(1.1);
-  z-index: 1;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.4) 0%,
+    rgba(0, 0, 0, 0.7) 100%
+  );
+  padding: 2rem;
 }
 
-.carousel-container .carousel-item img {
-  position: relative;
-  z-index: 2;
-  max-height: 500px; /* batasi tinggi gambar */
-  width: 100%;
-  object-fit: contain; /* gambar proporsional */
+/* Tombol Navigasi Carousel */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding: 18px;
+  background-size: 50%;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* ===== Service Cards (Layanan) ===== */
+.service-card {
+  border-radius: 16px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  background: #ffffff;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08) !important;
+}
+
+.service-card .icon-box {
+  width: 60px;
+  height: 60px;
   margin: 0 auto;
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(55, 66, 99, 0.08);
+  border-radius: 50%;
 }
 
-/* Panah navigasi selalu bisa diklik */
-.carousel-control-prev,
-.carousel-control-next {
-  z-index: 3 !important;
-}
-
-/* Blur lebih ringan + gambar lebih kecil di HP */
-@media (max-width: 768px) {
-  .carousel-container .carousel-item {
-    max-height: 400px;
-  }
-  .carousel-container .carousel-item img {
-    object-fit: cover;
-    max-height: 400px;
-  }
-  .carousel-container .carousel-item::before {
-    max-height: 100px;
-    filter: blur(15px);
-  }
-}
-
-/* ===== Carousel Fasilitas ===== */
-#facilities-carousel1 .carousel-item::before,
-#facilities-carousel2 .carousel-item::before {
-  content: none !important; /* hapus efek blur */
-}
-
-#facilities-carousel1 .carousel-item img,
-#facilities-carousel2 .carousel-item img {
-  width: 100%;
-  height: auto;
+/* ===== Facility Cards & Carousels ===== */
+.facility-img {
+  height: 260px;
   object-fit: cover;
 }
 
-/* ===== Navigasi Carousel (semua) ===== */
-.carousel-control-prev-icon,
-.carousel-control-next-icon {
-  background-color: #000; /* warna panah */
-  border-radius: 50%;
-  padding: 10px;
+.card {
+  border-radius: 16px;
 }
 
-/* ===== Card di Fasilitas ===== */
-.card {
-  min-width: 300px;
-  min-height: 400px;
+/* Custom Warna Tombol Primary */
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-hover);
+  border-color: var(--primary-hover);
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+/* ===== Responsive Utilities ===== */
+@media (max-width: 768px) {
+  body {
+    padding-top: 56px;
+  }
+
+  #hero-carousel .carousel-item {
+    height: 60vh;
+    min-height: 350px;
+  }
+
+  #hero-carousel h1 {
+    font-size: 1.8rem;
+  }
+
+  #hero-carousel p.lead {
+    font-size: 1rem;
+  }
+
+  .facility-img {
+    height: 200px;
+  }
 }

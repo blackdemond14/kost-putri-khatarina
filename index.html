@@ -1,7 +1,20 @@
 <!doctype html>
-<html>
+<html lang="id">
   <head>
-    <!-- Google tag (gtag.js) -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kost Putri Salatiga Khatarina</title>
+
+    <meta
+      name="description"
+      content="Kost Putri Khatarina merupakan pilihan tepat bagi para mahasiswi yang mencari tempat tinggal yang nyaman dan aman di Salatiga dekat UKSW."
+    />
+    <meta
+      name="google-site-verification"
+      content="61A-YPr31fjJi3Ks3tpFgpT-wtj4KNQX1GbdGVfX1ms"
+    />
+
+    <!-- Google Analytics -->
     <script
       async
       src="https://www.googletagmanager.com/gtag/js?id=G-CQDMG7NVX9"
@@ -12,27 +25,27 @@
         dataLayer.push(arguments);
       }
       gtag("js", new Date());
-
       gtag("config", "G-CQDMG7NVX9");
     </script>
-    <!--favicon-->
-    <!-- Favicon / Logo Website untuk Google -->
+
+    <!-- Favicon -->
     <link rel="icon" href="icon.png" sizes="192x192" type="image/png" />
     <link rel="shortcut icon" href="icon.png" />
     <link rel="apple-touch-icon" href="icon.png" />
-    <!--akhir favicon-->
-    <meta
-      name="google-site-verification"
-      content="61A-YPr31fjJi3Ks3tpFgpT-wtj4KNQX1GbdGVfX1ms"
+
+    <!-- CSS External -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
     />
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Kost Putri Khatarina merupakan pilihan tepat bagi para mahasiswi yang mencari tempat tinggal yang nyaman dan aman di Salatiga. Terletak dekat dengan Universitas Kristen Satya Wacana (UKSW), kos kami menawarkan fasilitas lengkap dan pelayanan terbaik untuk memastikan kepuasan dan kenyamanan para penghuni."
+    <!-- Bootstrap Icons untuk tampilan modern -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
     />
-    <title>Kost Putri Salatiga Khatarina</title>
-    <!-- Schema.org Site Name untuk Google Search -->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <!-- Schema.org -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -42,34 +55,26 @@
         "url": "https://blackdemond14.github.io/"
       }
     </script>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-    />
   </head>
   <body>
-    <nav
-      class="navbar navbar-expand-lg navbar-dark shadow-sm fixed-top"
-      style="background-color: #374263"
-    >
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top custom-navbar">
       <div class="container">
-        <a class="navbar-brand" href="#">Kost Putri Salatiga Khatarina</a>
+        <a class="navbar-brand fw-bold" href="#">
+          <i class="bi bi-house-heart-fill me-2"></i>Kost Khatarina
+        </a>
         <button
-          class="navbar-toggler"
+          class="navbar-toggler border-0"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
+              <a class="nav-link active" href="#">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#about">Tentang</a>
@@ -78,7 +83,7 @@
               <a class="nav-link" href="#services">Layanan</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#facilities">Fasilitas</a>
+              <a class="nav-link" href="#facilities">Lokasi & Cabang</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#contact">Kontak</a>
@@ -88,294 +93,404 @@
       </div>
     </nav>
 
-    <div class="carousel-container">
-      <div id="carousel" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-inner">
+    <!-- Hero Section dengan Carousel Background / Slide Header -->
+    <header
+      id="hero-carousel"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+    >
+      <div class="carousel-inner">
+        <div
+          class="carousel-item active"
+          style="background-image: url(&quot;background1.jpg&quot;)"
+        >
           <div
-            class="carousel-item active"
-            style="--bg: url(&quot;background1.jpg&quot;)"
+            class="carousel-overlay d-flex align-items-center justify-content-center text-center"
           >
-            <img
-              src="background1.jpg"
-              alt="Gambar Carousel 1"
-              class="img-fluid"
-            />
-          </div>
-          <div
-            class="carousel-item"
-            style="--bg: url(&quot;background3.jpg&quot;)"
-          >
-            <img
-              src="background3.jpg"
-              alt="Gambar Carousel 2"
-              class="img-fluid"
-            />
-          </div>
-          <div class="carousel-item" style="--bg: url(&quot;1/1.jpg&quot;)">
-            <img src="1/1.jpg" alt="Gambar Carousel 3" class="img-fluid" />
+            <div class="container text-white">
+              <h1 class="display-4 fw-bold">Kost Putri Salatiga Khatarina</h1>
+              <p class="lead">
+                Hunian nyaman, aman, dan strategis dekat Kampus UKSW Salatiga.
+              </p>
+              <a
+                href="#contact"
+                class="btn btn-primary btn-lg rounded-pill px-4 me-2"
+                ><i class="bi bi-whatsapp me-2"></i>Hubungi Kami</a
+              >
+              <a
+                href="#facilities"
+                class="btn btn-outline-light btn-lg rounded-pill px-4"
+                >Lihat Kamar</a
+              >
+            </div>
           </div>
         </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carousel"
-          data-bs-slide="prev"
+        <div
+          class="carousel-item"
+          style="background-image: url(&quot;background3.jpg&quot;)"
         >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Sebelumnya</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carousel"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Selanjutnya</span>
-        </button>
-      </div>
-    </div>
-
-    <section id="hero" class="bg-light py-5">
-      <div class="container">
-        <h2 class="m-0">Selamat datang di Kost Putri Salatiga Khatarina</h2>
-        <p class="mb-3">
-          Nikmati akomodasi yang nyaman dan aman untuk putri Anda
-        </p>
-        <a href="#contact" class="btn btn-primary">Hubungi Kami</a>
-      </div>
-    </section>
-
-    <section id="about" class="bg-white py-5">
-      <div class="container">
-        <h2 class="mt-2">Tentang Kami</h2>
-        <p>
-          Kost Putri Khatarina merupakan pilihan tepat bagi para mahasiswi yang
-          mencari tempat tinggal yang nyaman dan aman di Salatiga. Terletak
-          dekat dengan Universitas Kristen Satya Wacana (UKSW), kos kami
-          menawarkan fasilitas lengkap dan pelayanan terbaik untuk memastikan
-          kepuasan dan kenyamanan para penghuni.
-        </p>
-      </div>
-    </section>
-
-    <section id="services" class="bg-light py-5">
-      <div class="container">
-        <h2 class="mt-2">Layanan Kami</h2>
-        <ul class="list-inline-item">
-          <li>WiFi Gratis</li>
-          <li>Dapur Bersama</li>
-          <li>Kasur, Lemari, dan Meja di Setiap Kamar</li>
-          <li>Kamar Bersih dan Nyaman</li>
-          <li>Keamanan 24/7</li>
-          <li>Lingkungan yang Tenang</li>
-          <li>Dekat dengan Pusat Perbelanjaan dan Transportasi Umum</li>
-          <li>Dekat dengan Universitas Kristen Satya Wacana</li>
-        </ul>
-      </div>
-    </section>
-
-    <section id="facilities" class="bg-white py-5">
-      <div class="container">
-        <h2 class="mt-2">Fasilitas</h2>
-        <div class="row">
-          <div class="col-md-6">
-            <div
-              id="facilities-carousel1"
-              class="carousel slide"
-              data-bs-ride="carousel"
-            >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="background1.jpg"
-                    alt="Fasilitas 1 Gambar 1"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="1/1.jpg"
-                    alt="Fasilitas 1 Gambar 2"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="1/2.jpeg"
-                    alt="Fasilitas 1 Gambar 2"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="1/3.jpeg"
-                    alt="Fasilitas 1 Gambar 2"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="1/4.jpeg"
-                    alt="Fasilitas 1 Gambar 2"
-                    class="img-fluid"
-                  />
-                </div>
-              </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#facilities-carousel1"
-                data-bs-slide="prev"
+          <div
+            class="carousel-overlay d-flex align-items-center justify-content-center text-center"
+          >
+            <div class="container text-white">
+              <h1 class="display-4 fw-bold">Fasilitas Lengkap & Safe Space</h1>
+              <p class="lead">
+                Dilengkapi CCTV 24/7, WiFi cepat, dan suasana tenang untuk
+                belajar.
+              </p>
+              <a
+                href="#services"
+                class="btn btn-primary btn-lg rounded-pill px-4"
+                >Pelajari Fasilitas</a
               >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Sebelumnya</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#facilities-carousel1"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Selanjutnya</span>
-              </button>
-            </div>
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Fasilitas 1</h5>
-                <ul class="list-inline-item">
-                  <li>Tersedia Lebih dari 15 Kamar</li>
-                  <li>Kamar Mandi Bersama</li>
-                  <li>CCTV 24 Jam</li>
-                </ul>
-                <p class="card-text">
-                  Alamat: Jl. Kartini Gg. II No.484, Salatiga, Kec. Sidorejo,
-                  Kota Salatiga, Jawa Tengah 50715.
-                </p>
-                <a
-                  href="https://www.google.com/maps/place/Kost+Putri+Khatarina/@-7.3231838,110.4976264,15z/data=!4m6!3m5!1s0x2e7a791eaf0cd85b:0x37d79525af95a7ca!8m2!3d-7.3231838!4d110.4976264!16s%2Fg%2F11lrvmj105?entry=ttu"
-                  class="btn btn-primary"
-                  >Dapatkan Petunjuk</a
-                >
-              </div>
             </div>
           </div>
-          <div class="col-md-6">
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon"></span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#hero-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon"></span>
+      </button>
+    </header>
+
+    <!-- Tentang Kami -->
+    <section id="about" class="py-5">
+      <div class="container py-4">
+        <div class="row align-items-center">
+          <div class="col-lg-6 mb-4 mb-lg-0">
+            <h6 class="text-primary fw-bold text-uppercase">Tentang Kami</h6>
+            <h2 class="fw-bold mb-3">
+              Pilihan Hunian Terbaik untuk Mahasiswi di Salatiga
+            </h2>
+            <p class="text-muted leading-relaxed">
+              Kost Putri Khatarina merupakan pilihan tepat bagi para mahasiswi
+              yang mencari tempat tinggal yang nyaman dan aman di Salatiga.
+              Terletak sangat dekat dengan Universitas Kristen Satya Wacana
+              (UKSW), kos kami menawarkan fasilitas lengkap dan pelayanan
+              terbaik untuk mendukung aktivitas akademik dan kenyamanan Anda.
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <img
+              src="1/1.jpg"
+              alt="Suasana Kost Khatarina"
+              class="img-fluid rounded-4 shadow-sm"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Layanan / Keunggulan Grid -->
+    <section id="services" class="py-5 bg-light">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h6 class="text-primary fw-bold text-uppercase">Fasilitas Utama</h6>
+          <h2 class="fw-bold">Layanan & Keunggulan</h2>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-4 col-sm-6">
             <div
-              id="facilities-carousel2"
-              class="carousel slide"
-              data-bs-ride="carousel"
+              class="card h-100 border-0 shadow-sm p-3 text-center service-card"
             >
-              <div class="carousel-inner">
-                <div class="carousel-item active">
-                  <img
-                    src="background3.jpg"
-                    alt="Fasilitas 2 Gambar 1"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="2/1.jpeg"
-                    alt="Fasilitas 2 Gambar 2"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="2/2.jpeg"
-                    alt="Fasilitas 2 Gambar 2"
-                    class="img-fluid"
-                  />
-                </div>
-                <div class="carousel-item">
-                  <img
-                    src="2/3.jpeg"
-                    alt="Fasilitas 2 Gambar 2"
-                    class="img-fluid"
-                  />
-                </div>
+              <div class="icon-box mb-3 text-primary fs-1">
+                <i class="bi bi-wifi"></i>
               </div>
-              <button
-                class="carousel-control-prev"
-                type="button"
-                data-bs-target="#facilities-carousel2"
-                data-bs-slide="prev"
-              >
-                <span
-                  class="carousel-control-prev-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Sebelumnya</span>
-              </button>
-              <button
-                class="carousel-control-next"
-                type="button"
-                data-bs-target="#facilities-carousel2"
-                data-bs-slide="next"
-              >
-                <span
-                  class="carousel-control-next-icon"
-                  aria-hidden="true"
-                ></span>
-                <span class="visually-hidden">Selanjutnya</span>
-              </button>
+              <h5 class="fw-bold">WiFi Gratis</h5>
+              <p class="text-muted small">
+                Koneksi internet cepat untuk menunjang tugas kuliah dan hiburan.
+              </p>
             </div>
-            <div class="card mb-3">
-              <div class="card-body">
-                <h5 class="card-title">Fasilitas 2</h5>
-                <ul class="list-inline-item">
-                  <li>Tersedia 8 Kamar</li>
-                  <li>Kamar Mandi Dalam</li>
-                  <li>Parkiran Luas</li>
-                  <li>CCTV 24 Jam</li>
-                </ul>
-                <p class="card-text">
-                  Alamat: Jl. Imam Bonjol Gg. Melati No.1, RT.02/RW.08, Sidorejo
-                  Lor, Kec. Sidorejo, Kota Salatiga, Jawa Tengah 50714.
-                </p>
-                <a
-                  href="https://www.google.com/maps/place/Kost+Putri+Khatarina+2+Jetis/@-7.3210502,110.4942245,15z/data=!4m6!3m5!1s0x2e7a79662e12647d:0x13a6cda95a10d7ad!8m2!3d-7.3210502!4d110.4942245!16s%2Fg%2F11stx45lss?entry=ttu"
-                  class="btn btn-primary"
-                  >Dapatkan Petunjuk</a
-                >
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="card h-100 border-0 shadow-sm p-3 text-center service-card"
+            >
+              <div class="icon-box mb-3 text-primary fs-1">
+                <i class="bi bi-shield-check"></i>
               </div>
+              <h5 class="fw-bold">Keamanan 24/7</h5>
+              <p class="text-muted small">
+                Dilengkapi kamera CCTV di berbagai titik untuk kenyamanan
+                maksimal.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="card h-100 border-0 shadow-sm p-3 text-center service-card"
+            >
+              <div class="icon-box mb-3 text-primary fs-1">
+                <i class="bi bi-door-closed"></i>
+              </div>
+              <h5 class="fw-bold">Kamar Isian Lengkap</h5>
+              <p class="text-muted small">
+                Sudah tersedia kasur, lemari pakaian, dan meja belajar di setiap
+                kamar.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="card h-100 border-0 shadow-sm p-3 text-center service-card"
+            >
+              <div class="icon-box mb-3 text-primary fs-1">
+                <i class="bi bi-egg-fried"></i>
+              </div>
+              <h5 class="fw-bold">Dapur Bersama</h5>
+              <p class="text-muted small">
+                Fasilitas dapur bersama yang bersih dan rapi untuk memasak
+                harian.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="card h-100 border-0 shadow-sm p-3 text-center service-card"
+            >
+              <div class="icon-box mb-3 text-primary fs-1">
+                <i class="bi bi-building font"></i>
+              </div>
+              <h5 class="fw-bold">Dekat UKSW</h5>
+              <p class="text-muted small">
+                Lokasi sangat strategis, hemat waktu dan ongkos ke kampus Satya
+                Wacana.
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6">
+            <div
+              class="card h-100 border-0 shadow-sm p-3 text-center service-card"
+            >
+              <div class="icon-box mb-3 text-primary fs-1">
+                <i class="bi bi-tree"></i>
+              </div>
+              <h5 class="fw-bold">Lingkungan Tenang</h5>
+              <p class="text-muted small">
+                Suasana yang kondusif untuk beristirahat maupun fokus belajar.
+              </p>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="bg-light py-5">
-      <div class="container">
-        <h3 class="mt-2">Hubungi Kami</h3>
-        <p>
-          Jika Anda memiliki pertanyaan atau ingin mendapatkan informasi lebih
-          lanjut, silakan hubungi kami melalui WhatsApp.
-        </p>
-        <a href="https://wa.me/+628125811469" class="btn btn-success"
-          >Chat di WhatsApp</a
-        >
+    <!-- Fasilitas / Cabang Lokasi -->
+    <section id="facilities" class="py-5">
+      <div class="container py-4">
+        <div class="text-center mb-5">
+          <h6 class="text-primary fw-bold text-uppercase">Pilihan Cabang</h6>
+          <h2 class="fw-bold">Lokasi & Tipe Kost</h2>
+        </div>
+        <div class="row g-4">
+          <!-- Cabang 1 -->
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100 overflow-hidden">
+              <div
+                id="facilities-carousel1"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="background1.jpg"
+                      class="d-block w-100 facility-img"
+                      alt="Fasilitas Khatarina 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="1/1.jpg"
+                      class="d-block w-100 facility-img"
+                      alt="Fasilitas Khatarina 1"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="1/2.jpeg"
+                      class="d-block w-100 facility-img"
+                      alt="Fasilitas Khatarina 1"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#facilities-carousel1"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#facilities-carousel1"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+              <div class="card-body p-4">
+                <h4 class="card-title fw-bold">Kost Khatarina 1 (Kartini)</h4>
+                <p class="text-muted small mb-3">
+                  <i class="bi bi-geo-alt-fill text-danger me-1"></i> Jl.
+                  Kartini Gg. II No.484, Salatiga, Kec. Sidorejo, Kota Salatiga,
+                  Jawa Tengah 50715.
+                </p>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Tersedia > 15 Kamar
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Kamar Mandi Luar / Bersama
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Pengawasan CCTV 24 Jam
+                  </li>
+                </ul>
+                <a
+                  href="https://maps.app.goo.gl/egtf66KwzGzdonjZ7"
+                  target="_blank"
+                  class="btn btn-outline-primary w-100 rounded-pill"
+                >
+                  <i class="bi bi-map me-2"></i> Buka Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Cabang 2 -->
+          <div class="col-lg-6">
+            <div class="card border-0 shadow-sm h-100 overflow-hidden">
+              <div
+                id="facilities-carousel2"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="background3.jpg"
+                      class="d-block w-100 facility-img"
+                      alt="Fasilitas Khatarina 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="2/1.jpeg"
+                      class="d-block w-100 facility-img"
+                      alt="Fasilitas Khatarina 2"
+                    />
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="2/2.jpeg"
+                      class="d-block w-100 facility-img"
+                      alt="Fasilitas Khatarina 2"
+                    />
+                  </div>
+                </div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#facilities-carousel2"
+                  data-bs-slide="prev"
+                >
+                  <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#facilities-carousel2"
+                  data-bs-slide="next"
+                >
+                  <span class="carousel-control-next-icon"></span>
+                </button>
+              </div>
+              <div class="card-body p-4">
+                <h4 class="card-title fw-bold">Kost Khatarina 2 (Jetis)</h4>
+                <p class="text-muted small mb-3">
+                  <i class="bi bi-geo-alt-fill text-danger me-1"></i> Jl. Imam
+                  Bonjol Gg. Melati No.1, RT.02/RW.08, Sidorejo Lor, Kec.
+                  Sidorejo, Kota Salatiga, Jawa Tengah 50714.
+                </p>
+                <ul class="list-unstyled mb-4">
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Tersedia 8 Kamar Eksklusif
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Kamar Mandi Dalam
+                  </li>
+                  <li class="mb-2">
+                    <i class="bi bi-check-circle-fill text-success me-2"></i
+                    >Parkiran Luas & CCTV 24 Jam
+                  </li>
+                </ul>
+                <a
+                  href="https://maps.app.goo.gl/caYY7Ka6rLZ5BMaR6"
+                  target="_blank"
+                  class="btn btn-outline-primary w-100 rounded-pill"
+                >
+                  <i class="bi bi-map me-2"></i> Buka Google Maps
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <footer class="bg-dark text-white py-3">
-      <div class="container">
-        <p class="m-0">
-          &copy; 2023 Kost Putri Khatarina. Seluruh hak cipta dilindungi.
+    <!-- Contact Banner -->
+    <section
+      id="contact"
+      class="py-5 text-white"
+      style="background-color: #374263"
+    >
+      <div class="container text-center py-4">
+        <h2 class="fw-bold mb-3">Tanya Ketersediaan Kamar?</h2>
+        <p class="lead mb-4">
+          Jangan ragu untuk berkonsultasi mengenai ketersediaan kamar, harga,
+          atau survei lokasi.
+        </p>
+        <a
+          href="https://wa.me/+628125811469"
+          target="_blank"
+          class="btn btn-success btn-lg rounded-pill px-5 shadow"
+        >
+          <i class="bi bi-whatsapp me-2"></i> Chat via WhatsApp
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white-50 py-4">
+      <div class="container text-center">
+        <p class="m-0 small">
+          &copy; 2026 Kost Putri Khatarina Salatiga. All rights reserved.
         </p>
       </div>
     </footer>
 
+    <!-- Scripts -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
